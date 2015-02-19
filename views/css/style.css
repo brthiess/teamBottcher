@@ -1,0 +1,83 @@
+/**************************
+Navbar Style
+**************************/
+body {
+	background: #34495e;
+	color:white;
+}
+.navbar {
+  border-radius: 0 !important;
+  height: 5em;
+}
+
+.navbar-brand {
+	color: white !important;
+}
+
+.navbar-brand:hover {
+	color:  black!important;
+}
+
+.navbar-default {
+	background: rgb(2,125,70);
+	border-color: rgb(2,125,70);
+}
+
+.main-image {
+	padding: 0;
+	margin-top: 5em;
+}
+.main-image img {
+	width: 100%;
+}
+
+.facebook-icon {
+	background: blue;
+	
+}
+
+.nav-button {
+	border-left: black !important;
+	height:5em !important;
+}
+
+.nav-button:hover {
+	transition: background 0.5s ease;
+	background: rgb(245,245,1);
+}
+
+.nav-button a {
+	top: 15%;
+	height: 50%;
+	color: white !important;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+/************************************
+Footer
+************************************/
+
+.footer {
+	background: #7f8c8d;
+	height: 5em;
+}
+
+.copyright {
+	top:35%;
+	height: 50%;
+}
+
+.social-icons {
+	top: 10%;
+}
+
+.social-icons img {
+	height: 4em;
+	width: 4em;
+}
+
+.social-icons:hover {
+	cursor: pointer;
+	
+}	
