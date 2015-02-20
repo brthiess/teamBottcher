@@ -9,14 +9,16 @@
 	</div>
 </div>
 
-
-<div class="row">
-	<div class="col-sm-8">
-	</div>
-	<div class="col-sm-4">
-		<?php include 'twitter.php';?>
-	</div>		
+<div class="col-sm-8 news-container-container">
+		<?php include 'news.php';?>
 </div>
+<div class="col-sm-4">
+		<?php include 'twitter.php';?>
+</div>		
+
+
+<?php include "sponsors.php";?>
+
 
 <?php include "footer.php";?>
 

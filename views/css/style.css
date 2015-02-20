@@ -2,38 +2,30 @@
 Navbar Style
 **************************/
 body {
-	background: #34495e;
+	background: #ecf0f1;
 	color:white;
+	font-family:ralewaysemibold,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .navbar {
   border-radius: 0 !important;
-  height: 5em;
 }
 
 .navbar-brand {
 	color: white !important;
 }
 
-.navbar-brand:hover {
-	color:  black!important;
-}
-
 .navbar-default {
-	background: rgb(2,125,70);
-	border-color: rgb(2,125,70);
+	background: black;
+	border-color: black;
 }
 
 .main-image {
-	padding: 0;
-	margin-top: 5em;
+	padding: 0px;
+	margin-top: 3em;
+	margin-bottom: 0px;
 }
 .main-image img {
 	width: 100%;
-}
-
-.facebook-icon {
-	background: blue;
-	
 }
 
 .nav-button {
@@ -48,11 +40,77 @@ body {
 
 .nav-button a {
 	top: 15%;
-	height: 50%;
+	height: 100%;
 	color: white !important;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: bold;
 }
+.navbar-toggle {
+	background: #bdc3c7 !important;
+	border-color: #bdc3c7 !important;
+}
+
+.in {
+	min-height: 26.5em;
+}
+
+.top-buffer {
+	margin-top: 3em;
+}
+
+/*************************
+Twitter Widget
+**************************/
+
+.twitter-timeline {
+	width: 100%;
+}
+/*****************
+Sponsors Container
+*****************/
+
+.sponsor-container {
+	background: #2c3e50;
+}
+/*************************************
+News Container
+*************************************/
+.news-container-container {
+	background: #ecf0f1;
+	margin-top: 0px;
+}
+.news-container {
+	border-radius: 5px;
+}
+
+.news-container img {
+	max-width: 100%;
+}
+
+.news-container  .news-container-header{
+	color: #5C5C5C;
+	font-size: 3em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.news-container .news-entry-title {
+	color: #005C00;
+	font-size: 2em;
+}
+
+.news-container .news-entry-date {
+	color: #003300;	
+	font-style: italic;
+}
+
+
+
+.news-container .news-entry-text {
+	color: #5C5C5C;
+}
+
+
 
 /************************************
 Footer
@@ -60,7 +118,7 @@ Footer
 
 .footer {
 	background: #7f8c8d;
-	height: 5em;
+	min-height: 5em;
 }
 
 .copyright {
