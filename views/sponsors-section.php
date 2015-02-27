@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<?php include "header.php";?>
-<body>
-<?php
-	$page = "Sponsors";
-	include 'navbar.php';?>
 <div class="col-sm-12 sponsor-container">
-	<div class="row top-buffer">
+	<div class="row">
 		<div class="col-sm-12 text-center">
 			<h3>Huge Thanks To Our Sponsors</h3>
 		</div>
@@ -35,8 +28,5 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	
+	</div>	
 </div>
-</body>
-</html>

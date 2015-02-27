@@ -8,7 +8,6 @@ body {
 }
 .navbar {
   border-radius: 0 !important;
-  
 }
 
 .container-fluid {
@@ -50,9 +49,6 @@ body {
 	width: 100%;
 }
 
-.active-page {
-	background: rgb(245,245,1) !important;
-}
 
 .nav-button:hover {
 	transition: background 0.5s ease;
@@ -76,7 +72,13 @@ body {
 	margin-top: 3em;
 }
 
+/*************************
+Twitter Widget
+**************************/
 
+.twitter-timeline {
+	width: 100%;
+}
 
 /***********************
 Team Container
@@ -122,47 +124,9 @@ Team Container
 	border-radius: 3px;
 }
 
-.team-image-container img:hover {
-	cursor: pointer;
-}
-
-.team-image-container .image-wrapper {
-	position: relative;
-}
-
-.team-image-container .caption {
-	position: absolute;
-	left: 5%;
-	top: 0%;
-	width: 90%;
-	height: 0%;
-	transition: height 1s;
-	background: #27ae60;
-}
-
-.team-image-container .caption:hover {
-	cursor: pointer;
-}
-
-.team-image-container .caption-text {
-	font-size: 4em;
-	font-weight: 500;
-	top: 50%;
-	opacity: 0;
-}
-
-
-
 .player-social-icons {
 	width: 70%;
 	height: auto;
-}
-
-@media (max-width:700px) {
-	.player-social-icons {
-		width: 50%;
-		height: auto;
-	}		
 }
 
 .player {
@@ -189,10 +153,6 @@ News Container
 
 .blog-line {
 	color: #95a5a6;
-}
-
-.blog-header h2{
-	color: black;
 }
 
 
@@ -329,172 +289,3 @@ Footer
 	cursor: pointer;
 	
 }	
-
-
-
-/********************
-Bios
-*********************/
-
-.bio-container {
-	margin-top: 0em;
-	padding: 0px !important;
-}
-
-.bio-container h1,h2,h3,h4 {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	color: white;
-	margin-top: 0px !important;
-}
-
-.bio-container .bio-header {
-	background: linear-gradient(
-      rgba(0, 0, 0, 0.5), 
-      rgba(0, 0, 0, 0.7)
-    ),
-	url(../images/team-bio.jpg);
-}
-
-.bio-title {
-	position: absolute;
-	top: 30%;
-	width: 100% !important;
-}
-
-.bio-container h1{
-	font-size:10em;
-}
-
-.bio-container h2 {
-	font-size: 6em;
-	margin-top: 0px !important;
-}
-
-@media (max-width: 768px) {
-	.bio-container h1 {
-		font-size: 6em;
-	}
-	
-	.bio-container h2 {
-		font-size: 5em;
-	}
-}
-
-@media (max-width: 500px) {
-	.bio-container h1 {
-		font-size: 3.5em;
-	}
-		.bio-container h2 {
-		font-size: 2em;
-	}
-	.bio-title {
-		top: 50%;
-	}
-}
-
-@media (min-width: 768px) {
-	.bio-title h1 {
-		font-size: 10em;
-	}
-}
-
-.bio-team-names p {
-	display:inline;
-}
-
-.bio-container .player-bio{
-	position: relative;
-	background-position: top-center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-size: 100%;
-	padding: 0px;
-}
-
-.bio-container .team-bio{
-	position: relative;
-	background-position: top-center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-size: 100%;
-	padding: 0px;
-}
-
-@media (min-width: 768px) {
-	.bio-container .player-bio{
-		background-attachment: fixed;
-	}
-	.bio-container .team-bio{
-		background-attachment: fixed;
-	}
-}
-
-.bio-team-description {
-	background: #27ae60;
-	padding: 0px !important;
-	margin-top: 0px !important;
-}
-
-.bio-container .player-bio img {
-	width: 100%;
-	opacity: 0;
-	max-height: 400px;
-}
-
-.bio-container .player-bio {
-	max-height: 400px;
-}
-
-.bio-container .team-bio {
-	max-height: 600px;
-}
-
-.bio-container .team-bio img {
-	width: 100%;
-	opacity: 0;
-	
-}
-
-.player-bio-text {
-	background: #2c3e50;
-}
-
-.player-bio-text-title {
-	font-family: Impact, Charcoal, sans-serif;
-	font-style: italic;
-	font-size: 4em;
-	padding: 0px;
-}
-
-@media (max-width: 700px) {
-	.player-bio-text-title {
-		font-size: 2.5em;
-	}
-}
-.player-bio-text-title p {
-	display: inline;
-	color: #27ae60;
-}
-
-.player-attribute h3 {
-	color: #27ae60;
-}
-
-.player-answer  h3{
-	font-weight: 300;
-}
-
-.tom-bio {
-	background: url(../images/tom-appelman-bio.jpg);
-}
-
-.brendan-bio {
-	background: url(../images/brendan-bottcher-bio.jpg);
-}
-.brad-bio {
-	background: url(../images/brad-thiessen-bio.jpg);
-}
-.karrick-bio {
-	background: url(../images/karrick-martin-bio.jpg);
-}
