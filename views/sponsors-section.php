@@ -5,7 +5,7 @@
 		</div>
 	</div>
 	<div class="row sponsor-images-container">
-		<div class="col-sm-3">
+		<div class="col-sm-2">
 		</div>
 		<div class="col-sm-2">
 			<div class="sponsor-image-container">
@@ -25,6 +25,13 @@
 			<div class="sponsor-image-container">
 				<div class="sponsor-image">
 					<img class="img-responsive" class="sponsor-image-icon"  src="images/lazy-boy-logo-gray.png">
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="sponsor-image-container">
+				<div class="sponsor-image">
+					<img class="img-responsive" class="sponsor-image-icon"  src="images/goldline-logo-gray.png">
 				</div>
 			</div>
 		</div>

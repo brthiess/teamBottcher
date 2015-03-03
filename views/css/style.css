@@ -1,6 +1,11 @@
 /**************************
 Navbar Style
 **************************/
+
+html, body {
+	height: 100%;
+}
+
 body {
 	background: #ecf0f1;
 	color:white;
@@ -10,6 +15,15 @@ body {
   border-radius: 0 !important;
   
 }
+
+.active-page {
+	color: white !important;
+	font-family:ralewaysemibold,"Helvetica Neue",Helvetica,Arial,sans-serif !important;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+
 
 .container-fluid {
 	background: black;
@@ -76,12 +90,18 @@ body {
 	margin-top: 3em;
 }
 
+.top-buffer-small {
+	margin-top: 1em;
+}
+
 
 
 /***********************
 Team Container
 ************************/
-
+.caption {
+	overflow: hidden;
+}
 .team-container {
 	background: #7f8c8d;
 	color: black;
@@ -136,21 +156,33 @@ Team Container
 	top: 0%;
 	width: 90%;
 	height: 0%;
-	transition: height 1s;
+	transition: height 0.5s;
 	background: #27ae60;
 }
 
-.team-image-container .caption:hover {
+.team-image-container .caption-hover {
+	position: absolute;
+	left: 5%;
+	top: 0%;
+	width: 90%;
+	height: 100%;
+	z-index: 999;
 	cursor: pointer;
 }
+
+
 
 .team-image-container .caption-text {
 	font-size: 4em;
 	font-weight: 500;
-	top: 50%;
+	top: 20%;
 	opacity: 0;
 }
 
+.team-image-container .caption img {
+	height: 20%;
+	width: auto;
+}
 
 
 .player-social-icons {
@@ -305,10 +337,14 @@ Sponsor
 /************************************
 Footer
 ************************************/
-
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto -5em;
+}
 .footer {
 	background: #7f8c8d;
 	min-height: 5em;
+	margin-bottom: 0px;
 }
 
 .copyright {
@@ -329,6 +365,8 @@ Footer
 	cursor: pointer;
 	
 }	
+
+
 
 
 
@@ -498,3 +536,83 @@ Bios
 .karrick-bio {
 	background: url(../images/karrick-martin-bio.jpg);
 }
+
+/***********************************
+Contact Us
+************************************/
+.contact-header h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: black;
+}
+
+.contact-icon {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	color: black;
+}
+
+
+.contact-icon img {
+	width: 10%;
+}
+
+
+@media (min-width: 768px) {
+	.contact-icons-container {
+	margin-top: 8em;
+	}
+}
+
+@media (max-width: 768px) {
+	.contact-icons-container {
+	margin-top: 0em;
+	}
+}
+
+/*********************************
+Modal
+**********************************/
+
+/*
+.gallery-wrapper {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+}
+
+*/
+
+.modal-image {
+	position: absolute;
+	height: 85%;
+	width: 90%;
+	z-index: -1;
+	top: 10%;
+	left: 5%;
+	opacity: 0;
+}
+
+.modal-image-wrapper {
+	background: blue;
+	width: ;
+}
+
+.modal-image img {
+	position: relative;
+	max-height: 100%;
+	width: auto;
+	border-style: solid;
+	border-width: 10px;
+	border-color: white;
+}
+
+.close-modal{
+	position: absolute !important;
+	right: 0% !important;
+	top: 0% !important;
+}
+
+

@@ -8,4 +8,6 @@
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script src="js/footer.js"></script>
   <script src="js/sponsor.js"></script>
+  <script src="js/bios.js"></script>
+  <script src="js/gallery.js"></script>
 </head>

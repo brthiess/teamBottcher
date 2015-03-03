@@ -2,7 +2,9 @@
 <html lang="en">
 <?php include "header.php";?>
 <body>
-<?php include 'navbar.php';?>
+<?php
+	$page = 'Bios';
+ include 'navbar.php';?>
 
 <div class="col-sm-12 bio-container">
 	<div class="bio-header team-bio">
@@ -19,7 +21,7 @@
 		</div>
 		<div class="col-sm-4">
 		</div>
-		<div class="row">
+
 			<div class="col-sm-12 bio-team-names">
 				<h3><i>Bottcher, Appelman, Thiessen, Martin.</i></h3> 
 			</div>
@@ -28,7 +30,7 @@
 			</div>
 			<div class="bio-team-description-text col-sm-10 col-sm-offset-1">
 			</div>
-		</div>
+
 	</div>
 
 	<div class="col-sm-12 player-bio brendan-bio">

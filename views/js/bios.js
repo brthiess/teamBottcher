@@ -1,13 +1,10 @@
 $( document ).ready(function() {
-	$(".sponsor-image img").hover(
+	$(".team-image-container .caption-hover").hover(
 				function() {	
-					var string = $(this).attr("src");
-					string = string.replace("gray", "colour");
-					console.log(string);
-					$(this).attr("src", string);
+					$(this).siblings(".caption").css("height", "100%");
+					$(".team-image-container .caption-text").css("opacity", "1");
 				}, function() {
-					var string = $(this).attr("src");
-					string = string.replace("colour", "gray");
-					$(this).attr("src", string);
+					$(".team-image-container .caption").css("height", "0%");
+					$(".team-image-container .caption-text").css("opacity", "0");
 				});
 });
