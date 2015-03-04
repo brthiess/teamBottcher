@@ -37,19 +37,19 @@
 			<div class="row">
 					<div class="col-sm-3">
 					</div>
-					<div class="col-sm-2">
-						<div class="player-social-icons center-block">
+					<div class="player-social-icons col-sm-2">
+						<div class="center-block">
 							<img  src="images/facebook-icon.png">
 						</div>
 					</div>
-					<div class="col-sm-2">
-						<div class="player-social-icons center-block">
+					<div class="player-social-icons col-sm-2">
+						<div class="center-block">
 							<img src="images/twitter-icon.png" >
 						</div>
 					</div>
-					<div class="col-sm-2">
-						<div class="player-social-icons center-block">
-							<img src="images/email-icon.svg">
+					<div class="player-social-icons col-sm-2">
+						<div class="center-block">
+							<img src="images/email-icon.png">
 						</div>
 					</div>
 			</div>
@@ -84,19 +84,19 @@
 			<div class="row">
 					<div class="col-sm-3">
 					</div>
-					<div class="col-sm-2">
-						<div class="player-social-icons center-block">
+					<div class="player-social-icons col-sm-2">
+						<div class="center-block">
 							<img  src="images/facebook-icon.png">
 						</div>
 					</div>
-					<div class="col-sm-2">
-						<div class="player-social-icons center-block">
+					<div class="player-social-icons col-sm-2">
+						<div class="center-block">
 							<img src="images/twitter-icon.png" >
 						</div>
 					</div>
-					<div class="col-sm-2">
-						<div class="player-social-icons center-block">
-							<img src="images/email-icon.svg">
+					<div class="player-social-icons col-sm-2">
+						<div class="center-block">
+							<img src="images/email-icon.png">
 						</div>
 					</div>
 			</div>
@@ -131,19 +131,19 @@
 			<div class="row">
 					<div class="col-sm-3">
 					</div>
-					<div class="col-sm-2">
-						<div class="player-social-icons center-block">
+					<div class="player-social-icons col-sm-2">
+						<div class="center-block">
 							<img  src="images/facebook-icon.png">
 						</div>
 					</div>
-					<div class="col-sm-2">
-						<div class="player-social-icons center-block">
+					<div class="player-social-icons col-sm-2">
+						<div class="center-block">
 							<img src="images/twitter-icon.png" >
 						</div>
 					</div>
-					<div class="col-sm-2">
-						<div class="player-social-icons center-block">
-							<img src="images/email-icon.svg">
+					<div class="player-social-icons col-sm-2">
+						<div class="center-block">
+							<img src="images/email-icon.png">
 						</div>
 					</div>
 			</div>
@@ -178,23 +178,24 @@
 			<div class="row">
 					<div class="col-sm-3">
 					</div>
-					<div class="col-sm-2">
-						<div class="player-social-icons center-block">
+					<div class="player-social-icons col-sm-2">
+						<div class="center-block">
 							<img  src="images/facebook-icon.png">
 						</div>
 					</div>
-					<div class="col-sm-2">
-						<div class="player-social-icons center-block">
+					<div class="player-social-icons col-sm-2">
+						<div class="center-block">
 							<img src="images/twitter-icon.png" >
 						</div>
 					</div>
-					<div class="col-sm-2">
-						<div class="player-social-icons center-block">
-							<img src="images/email-icon.svg">
+					<div class="player-social-icons col-sm-2">
+						<div class="center-block">
+							<img src="images/email-icon.png">
 						</div>
 					</div>
-			</div>
-			
+			</div>			
 		</div>
 	</div>
+<div class="bottom-buffer">
+</div>
 </div>

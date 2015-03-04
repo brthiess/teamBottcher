@@ -8,6 +8,7 @@ spl_autoload_register(function($class){
 use \Michelf\Markdown;
 ?>
 <div class="col-sm-12 news-container">
+<br><br><br>
 	<div class="blog-header text-center">
 		<h2>Blog</h2>
 	</div>

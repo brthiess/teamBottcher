@@ -6,6 +6,6 @@
 	<div class="col-sm-4 social-icons text-center">
 		<img id="facebook-icon" src="images/facebook-icon.png">
 		<img id="twitter-icon" src="images/twitter-icon.png">
-		<img id="email-icon" src="images/email-icon.svg">
+		<img id="email-icon" src="images/email-icon.png">
 	</div>
 </div>

@@ -15,6 +15,6 @@ $( document ).ready(function() {
 				function() {
 					$(this).attr("src", "images/email-icon-color.png");
 				}, function() {
-					$(this).attr("src", "images/email-icon.svg");
+					$(this).attr("src", "images/email-icon.png");
 				});
 });
