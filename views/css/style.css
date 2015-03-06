@@ -37,7 +37,7 @@ body {
 
 .navbar-title {
 	font-family: Impact, Charcoal, sans-serif;
-	font-size: 2.25em;
+	font-size: 2.0em;
 	font-style: italic;
 	bottom: 0%;
 	
@@ -66,7 +66,34 @@ body {
 	padding: 0px;
 	margin-top: 3em;
 	margin-bottom: 0px;
+	max-height: 45em;
 }
+
+@media (max-width: 1100px) {
+	.main-image{
+		max-height: 30em;
+	}
+}
+
+@media (max-width: 900px) {
+	.main-image{
+		max-height: 25em;
+	}
+}
+
+@media (max-width: 700px) {
+	.main-image{
+		max-height: 20em;
+	}
+}
+
+@media (max-width: 400px) {
+	.main-image{
+		max-height: 10em;
+	}
+}
+
+
 .main-image img {
 	width: 100%;
 }
@@ -103,6 +130,153 @@ body {
 
 .top-buffer-small {
 	margin-top: 1em;
+}
+
+
+/*******************
+Slider
+********************/
+@-webkit-keyframes slidy {
+0% { left: 0%; }
+15% { left: 0%; }
+20% { left: -100%; }
+35% { left: -100%; }
+40% { left: -200%; }
+60% { left: -200%; }
+65% { left: -300%; }
+85% { left: -300%; }
+90% { left: -400%; }
+100% { left: -400%; }
+}
+
+@-webkit-keyframes circle-one {
+0% { background: white; }
+15% { background: white; }
+20% { background: black; }
+100% { background: black; }
+}
+
+@-webkit-keyframes circle-two {
+0% { background: black; }
+15% { background: black; }
+20% { background: white; }
+35% { background: white; }
+40% { background: black; }
+100% { background: black; }
+}
+@-webkit-keyframes circle-three {
+0% { background: black; }
+35% { background: black; }
+40% { background: white; }
+60% { background: white; }
+65% { background: black; }
+100% { background: black; }
+}
+@-webkit-keyframes circle-four {
+0% { background: black; }
+60% { background: black; }
+65% { background: white; }
+85% { background: white; }
+90% { background: black; }
+100% { background: black; }
+}
+@-webkit-keyframes circle-five {
+0% { background: black; }
+85% { background: black; }
+90% { background: white; }
+95% { background: white; }
+100% { background: black; }
+}
+
+
+
+
+
+@keyframes slidy {
+0% { left: 0%; }
+15% { left: 0%; }
+20% { left: -100%; }
+40% { left: -100%; }
+45% { left: -200%; }
+65% { left: -200%; }
+70% { left: -300%; }
+90% { left: -300%; }
+95% { left: -400%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+  -webkit-animation: 30s slidy infinite;
+}
+
+#slider .circle {
+	position: absolute;
+	top: 94%;
+	height: 1em;
+	width: 1em;
+	border-radius: .5em;
+	background: black;
+	opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+	#slider .circle {
+		height: 0.7em;
+		width: 0.7em;
+		border-radius: 0.35em;
+	}
+}
+
+@media (max-width: 700px) {
+	#slider .circle {
+		height: 0.5em;
+		width: 0.5em;
+		border-radius: 0.25em;
+	}
+}
+
+@media (max-width: 500px) {
+	#slider .circle {
+		height: 0.3em;
+		width: 0.3em;
+		border-radius: 0.15em;
+	}
+}
+
+#slider .one {
+	left: 46%;
+	animation: 30s circle-one infinite; 
+	-webkit-animation: 30s circle-one infinite;
+}
+#slider .two {
+	left: 48%;
+	animation: 30s circle-two infinite; 
+	-webkit-animation: 30s circle-two infinite;
+}
+#slider .three {
+	left: 50%;
+		animation: 30s circle-three infinite; 
+	-webkit-animation: 30s circle-three infinite;
+}
+#slider .four {
+	left: 52%;
+		animation: 30s circle-four infinite; 
+	-webkit-animation: 30s circle-four infinite;
+}
+#slider .five {
+	left: 54%;
+		animation: 30s circle-five infinite; 
+	-webkit-animation: 30s circle-five infinite;
 }
 
 
@@ -572,15 +746,15 @@ Bios
 .bio-container .player-bio img {
 	width: 100%;
 	opacity: 0;
-	max-height: 600px;
+	max-height: 700px;
 }
 
 .bio-container .player-bio {
-	max-height: 600px;
+	max-height: 700px;
 }
 
 .bio-container .team-bio {
-	max-height: 600px;
+	max-height: 700px;
 }
 
 .bio-container .team-bio img {
@@ -623,8 +797,18 @@ Bios
 .karrick-bio {
 		background:	url(../images/bios/karrick-background.jpg);
 }
+.rob-bio {
+		background:	url(../images/bios/rob-background.jpg);
+}
 
 .karrick-text {
+	position: absolute;
+	right: 5%;
+	top: 10%;
+	color: white;	
+}
+
+.rob-text {
 	position: absolute;
 	right: 5%;
 	top: 10%;
@@ -656,6 +840,10 @@ Bios
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;	
 }	
+
+.player-bio {
+	max-height: 40em;
+}
 
 /***********************************
 Contact Us

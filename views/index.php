@@ -4,8 +4,22 @@
 <body>
 <?php include 'navbar.php';?>
 <div class="wrapper">
+
 <div class="col-sm-12 main-image">
-	<img src="images/main.jpg" class="img-responsive" alt="Responsive image">
+	<div id="slider">
+		<figure>
+			<img src="images/main.jpg" alt="">
+			<img src="images/brendan-bottcher-bio.jpg" alt="">
+			<img src="images/test.jpg" alt="">
+			<img src="images/test2.jpg" alt="">
+			<img src="images/test3.jpg" alt="">
+		</figure>
+		<div class="circle one"></div>
+		<div class="circle two"></div>
+		<div class="circle three"></div>
+		<div class="circle four"></div>
+		<div class="circle five"></div>
+	</div>
 </div>
 
 	<?php include 'team.php';?>

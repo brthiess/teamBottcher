@@ -84,6 +84,17 @@
 			</div>
 		</div>
 	</div>
+	<div class="col-sm-12 player-bio rob-bio" id="rob-bio">
+		<img src="/images/bios/rob-background.jpg">
+		<div class="rob-text">
+			<div class="name">
+				<h2>Rob Krepps</h2>
+			</div>
+			<div class="position">
+				<h3>Coach | Started Curling: 1887 <br>Resides: Edmonton, AB </h3>
+			</div>
+		</div>
+	</div>
 
 </div>
 	<?php include "footer.php";?>
