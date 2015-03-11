@@ -7,6 +7,12 @@ html, body {
 	cursor: default;
 }
 
+a:hover {
+	text-decoration: none;
+	color: white;
+	transition: color .75s;
+}
+
 
 body {
 	background: #ecf0f1;
@@ -75,23 +81,6 @@ body {
 	}
 }
 
-@media (max-width: 900px) {
-	.main-image{
-		max-height: 25em;
-	}
-}
-
-@media (max-width: 700px) {
-	.main-image{
-		max-height: 20em;
-	}
-}
-
-@media (max-width: 400px) {
-	.main-image{
-		max-height: 10em;
-	}
-}
 
 
 .main-image img {
@@ -136,19 +125,6 @@ body {
 /*******************
 Slider
 ********************/
-@-webkit-keyframes slidy {
-0% { left: 0%; }
-15% { left: 0%; }
-20% { left: -100%; }
-35% { left: -100%; }
-40% { left: -200%; }
-60% { left: -200%; }
-65% { left: -300%; }
-85% { left: -300%; }
-90% { left: -400%; }
-100% { left: -400%; }
-}
-
 @-webkit-keyframes circle-one {
 0% { background: white; }
 15% { background: white; }
@@ -188,20 +164,68 @@ Slider
 100% { background: black; }
 }
 
+@-webkit-keyframes circle-one {
+0% { background: white; }
+15% { background: white; }
+20% { background: black; }
+100% { background: black; }
+}
 
+@keyframes circle-two {
+0% { background: black; }
+15% { background: black; }
+20% { background: white; }
+35% { background: white; }
+40% { background: black; }
+100% { background: black; }
+}
+@keyframes circle-three {
+0% { background: black; }
+35% { background: black; }
+40% { background: white; }
+60% { background: white; }
+65% { background: black; }
+100% { background: black; }
+}
+@keyframes circle-four {
+0% { background: black; }
+60% { background: black; }
+65% { background: white; }
+85% { background: white; }
+90% { background: black; }
+100% { background: black; }
+}
+@keyframes circle-five {
+0% { background: black; }
+85% { background: black; }
+90% { background: white; }
+95% { background: white; }
+100% { background: black; }
+}
 
-
+@-webkit-keyframes slidy {
+0% { left: 0%; }
+15% { left: 0%; }
+20% { left: -100%; }
+35% { left: -100%; }
+40% { left: -200%; }
+60% { left: -200%; }
+65% { left: -300%; }
+85% { left: -300%; }
+90% { left: -400%; }
+100% { left: -400%; }
+}
 
 @keyframes slidy {
 0% { left: 0%; }
 15% { left: 0%; }
 20% { left: -100%; }
-40% { left: -100%; }
-45% { left: -200%; }
-65% { left: -200%; }
-70% { left: -300%; }
-90% { left: -300%; }
-95% { left: -400%; }
+35% { left: -100%; }
+40% { left: -200%; }
+60% { left: -200%; }
+65% { left: -300%; }
+85% { left: -300%; }
+90% { left: -400%; }
 100% { left: -400%; }
 }
 
@@ -219,9 +243,23 @@ div#slider figure {
   -webkit-animation: 30s slidy infinite;
 }
 
+@media (max-width:768px) {
+	div #slider figure {
+		width: 1500%;
+		animation: none;
+		-webkit-animation: none;
+		left: -385%;
+	}
+	#slider .circle {
+		animation: none !important; 
+		-webkit-animation: none !important;
+		opacity: 0 !important;
+	}
+}	
+
 #slider .circle {
 	position: absolute;
-	top: 94%;
+	top: 92%;
 	height: 1em;
 	width: 1em;
 	border-radius: .5em;
@@ -290,8 +328,8 @@ Team Container
 
 .team-header h2 {
 	font-style: default !important;
-	font-weight: 900;
-	font-size: 4em;
+	font-weight: 400;
+	font-size: 3em;
 }
 
 .caption {
@@ -300,8 +338,6 @@ Team Container
 .team-container {
 	background: #7f8c8d;
 	color: black;
-	font-family: Impact, Charcoal, sans-serif;
-	font-style: italic;
 }
 
 .team-container .player img {
@@ -395,9 +431,10 @@ Team Container
 }
 
 @media (max-width:700px) {	
-	.center-block {
-		width: 50%;
-	}
+	.player-social-icons .center-block {
+		width: 30%;
+		margin-bottom: 1em;
+	}	
 }
 
 .player {
@@ -507,6 +544,7 @@ Videos
 Sponsor
 ***********************************/
 .sponsor-container {
+	padding-top: 2em;
 	background: white;
 	color: black;
 }
@@ -545,7 +583,7 @@ Footer
 	margin: 0 auto -5em;
 }
 .footer {
-	background: #7f8c8d;
+	background: #4C4C4C;
 	min-height: 5em;
 	margin-bottom: 0px;
 	padding-top: 1em;
@@ -597,7 +635,17 @@ Bios
       rgba(0, 0, 0, 0.7)
     ),
 	url(../images/team-bio.jpg);
+	min-height: 25em;
+	background-size: cover !important;
 }
+
+@media (max-width: 768px) {
+	.bio-container .bio-header {
+		background: #27ae60;
+	}
+}
+
+
 
 .bio-title {
 	position: absolute;
@@ -646,7 +694,7 @@ Bios
 	}
 	
 	.bio-team-description {
-		min-height: 105em;
+		min-height: 155em;
 	}
 }
 
@@ -768,8 +816,6 @@ Bios
 }
 
 .player-bio-text-title {
-	font-family: Impact, Charcoal, sans-serif;
-	font-style: italic;
 	font-size: 4em;
 	padding: 0px;
 }
@@ -803,7 +849,7 @@ Bios
 
 .karrick-text {
 	position: absolute;
-	right: 5%;
+	left: 5%;
 	top: 10%;
 	color: white;	
 }
@@ -822,6 +868,20 @@ Bios
 	color: white;	
 }
 
+.tom-text {
+	position: absolute;
+	left: 5%;
+	top: 10%;
+	color: white;	
+}
+
+.brad-text {
+	position: absolute;
+	right: 5%;
+	top: 10%;
+	color: white;	
+}
+
 .player-bio h2 {
 	color: white !important;
 	line-height: 2em;
@@ -830,10 +890,11 @@ Bios
 .player-bio h3 {
 	color: white !important;
 	line-height: 2em;
+	font-size: 2.2vw;
 }
 
 .player-bio h2 {
-	font-size: 4em;
+	font-size: 4vw;
 }
 
 .player-bio .name {
@@ -841,8 +902,57 @@ Bios
 	font-weight: 700;	
 }	
 
-.player-bio {
-	max-height: 40em;
+.bio-container .player-bio {
+	height: 45em;
+}
+
+	.col-lg-5ths  .name{
+		opacity: 0;
+		height: 0em;
+	}
+	.col-lg-5ths  .position{
+		opacity: 0;
+		height: 0em;
+	}
+
+@media (max-width: 768px) {
+	.player-bio {
+		height: 0em !important;
+		max-height: 0em !important;
+		overflow: hidden;
+	}
+	
+	.tom-bio {
+		background:  	none !important;
+	}
+
+	.brendan-bio {
+		background:  	none !important;
+	}
+	.brad-bio {
+		background:  	none !important;
+	}
+	.karrick-bio {
+	background:  	none !important;
+	}
+	.rob-bio {
+			background:  	none !important;
+	}
+	
+	.col-lg-5ths  .name{
+		opacity: 1;
+		height: auto;
+	}
+	.col-lg-5ths  .position{
+		opacity: 1;
+		height: auto;
+
+	}
+	.col-lg-5ths h3 {
+		color: white;
+		line-height: 1.5em;
+	}
+	
 }
 
 /***********************************
@@ -858,6 +968,7 @@ Contact Us
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	color: black;
+	margin-top: .5em;
 }
 
 
@@ -946,6 +1057,12 @@ Blog
 
 .blog-entry-text-text {
 	color: #666666;
+	font-size: 1.2em;
+}
+
+
+.blog-entry .month-year, .day {
+	text-align: left;
 }
 
 

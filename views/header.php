@@ -10,4 +10,5 @@
   <script src="js/sponsor.js"></script>
   <script src="js/bios.js"></script>
   <script src="js/gallery.js"></script>
+  <script src="js/social.js"></script>
 </head>

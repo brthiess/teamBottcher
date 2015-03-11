@@ -39,17 +39,17 @@
 					</div>
 					<div class="player-social-icons col-sm-2">
 						<div class="center-block">
-							<img  src="images/facebook-icon.png">
+							<a href="https://www.facebook.com/TeamBottcher"><img  class="center-block" src="images/facebook-icon-white.png"></a>
 						</div>
 					</div>
 					<div class="player-social-icons col-sm-2">
 						<div class="center-block">
-							<img src="images/twitter-icon.png" >
+							<a href="https://twitter.com/KarrickMartin"><img src="images/twitter-icon-white.png" ></a>
 						</div>
 					</div>
 					<div class="player-social-icons col-sm-2">
 						<div class="center-block">
-							<img src="images/email-icon.png">
+							<a href="mailto:karrickmartin@teambottcher.ca"><img src="images/email-icon-white.png"></a>
 						</div>
 					</div>
 			</div>
@@ -86,17 +86,17 @@
 					</div>
 					<div class="player-social-icons col-sm-2">
 						<div class="center-block">
-							<img  src="images/facebook-icon.png">
+							<a href="https://www.facebook.com/TeamBottcher"><img  class="center-block" src="images/facebook-icon-white.png"></a>
 						</div>
 					</div>
 					<div class="player-social-icons col-sm-2">
 						<div class="center-block">
-							<img src="images/twitter-icon.png" >
+							<a href="https://twitter.com/BradCurler"><img src="images/twitter-icon-white.png" ></a>
 						</div>
 					</div>
 					<div class="player-social-icons col-sm-2">
 						<div class="center-block">
-							<img src="images/email-icon.png">
+							<a href="mailto:bradthiessen@teambottcher.ca"><img src="images/email-icon-white.png"></a>
 						</div>
 					</div>
 			</div>
@@ -133,17 +133,17 @@
 					</div>
 					<div class="player-social-icons col-sm-2">
 						<div class="center-block">
-							<img  src="images/facebook-icon.png">
+							<a href="https://www.facebook.com/TeamBottcher"><img  class="center-block" src="images/facebook-icon-white.png"></a>
 						</div>
 					</div>
 					<div class="player-social-icons col-sm-2">
 						<div class="center-block">
-							<img src="images/twitter-icon.png" >
+							<a href="https://twitter.com/tappelman77"><img src="images/twitter-icon-white.png" ></a>
 						</div>
 					</div>
 					<div class="player-social-icons col-sm-2">
 						<div class="center-block">
-							<img src="images/email-icon.png">
+							<a href="mailto:tomappelman@teambottcher.ca"><img src="images/email-icon-white.png"></a>
 						</div>
 					</div>
 			</div>
@@ -180,17 +180,17 @@
 					</div>
 					<div class="player-social-icons col-sm-2">
 						<div class="center-block">
-							<img  src="images/facebook-icon.png">
+							<a href="https://www.facebook.com/TeamBottcher"><img  class="center-block" src="images/facebook-icon-white.png"></a>
 						</div>
 					</div>
 					<div class="player-social-icons col-sm-2">
 						<div class="center-block">
-							<img src="images/twitter-icon.png" >
+							<a href="https://twitter.com/TeamBottcher"><img src="images/twitter-icon-white.png" ></a>
 						</div>
 					</div>
 					<div class="player-social-icons col-sm-2">
 						<div class="center-block">
-							<img src="images/email-icon.png">
+							<a href="mailto:brendanbottcher@teambottcher.ca"><img src="images/email-icon-white.png"></a>
 						</div>
 					</div>
 			</div>			

@@ -31,31 +31,60 @@
 			<div class="bio-image-wrapper center-block">
 				<a href="#karrick-bio"><img src="images/bios/karrick-gray.jpg"></a>
 			</div>
+			<div class="name">
+				<h2>Karrick Martin</h2>
+			</div>
+			<div class="position">
+				<h3>Lead | Born: 1989<br>Started Curling: 2005<br>Resides: Edmonton, AB</h3>
+			</div>
 		</div>
 		<div class="col-lg-5ths">
 			<div class="bio-image-wrapper center-block">
 				<a href="#brad-bio"><img src="images/bios/brad-gray.jpg"></a>
+			</div>
+			<div class="name">
+				<h2>Brad Thiessen</h2>
+			</div>
+			<div class="position">
+				<h3>Second | Born: 1990<br>Started Curling: 2005<br>Resides: Edmonton, AB</h3>
 			</div>
 		</div>
 		<div class="col-lg-5ths">
 			<div class="bio-image-wrapper center-block">
 				<a href="#rob-bio"><img src="images/bios/rob-gray.jpg"></a>
 			</div>
+			<div class="name">
+				<h2>Rob Krepps</h2>
+			</div>
+			<div class="position">
+				<h3>Coach | Born: 1966<br>Started Curling: 1977<br>Resides: Edmonton, AB</h3>
+			</div>
 		</div>
 		<div class="col-lg-5ths">
 			<div class="bio-image-wrapper center-block">
 				<a href="#tom-bio"><img src="images/bios/tom-gray.jpg"></a>
+			</div>
+			<div class="name">
+				<h2>Tom Appelman</h2>
+			</div>
+			<div class="position">
+				<h3>Third | Born: 1981<br>Started Curling: 1993<br>Resides: Edmonton, AB</h3>
 			</div>
 		</div>
 		<div class="col-lg-5ths">
 			<div class="bio-image-wrapper center-block">
 				<a href="#brendan-bio"><img src="images/bios/brendan-gray.jpg"></a>
 			</div>
+			<div class="name">
+				<h2>Brendan Bottcher</h2>
+			</div>
+			<div class="position">
+				<h3>Skip | Born: 1991<br>Started Curling: 2002<br>Resides: Sherwood Park, AB</h3>
+			</div>
 		</div>
 	</div>
 
 	<div class="col-sm-12 player-bio brendan-bio" id="brendan-bio">
-		<img src="/images/bios/brendan-background.jpg">
 		<div class="brendan-text">
 			<div class="name">
 				<h2>Brendan Bottcher</h2>
@@ -66,15 +95,28 @@
 		</div>
 	</div>
 	<div class="col-sm-12 player-bio tom-bio" id="tom-bio">
-		<img src="/images/bios/tom-background.jpg">
+		<div class="tom-text">
+			<div class="name">
+				<h2>Tom Appelman</h2>
+			</div>
+			<div class="position">
+				<h3>Third | Started Curling: 1993 <br>Resides: Edmonton, AB </h3>
+			</div>
+		</div>
 	</div>
 	
 	<div class="col-sm-12 player-bio brad-bio" id="brad-bio">
-		<img src="/images/bios/brad-background.jpg">
+		<div class="brad-text">
+			<div class="name">
+				<h2>Brad Thiessen</h2>
+			</div>
+			<div class="position">
+				<h3>Second | Started Curling: 2004 <br>Resides: Edmonton, AB </h3>
+			</div>
+		</div>
 	</div>
 
 	<div class="col-sm-12 player-bio karrick-bio" id="karrick-bio">
-		<img src="/images/bios/karrick-background.jpg">
 		<div class="karrick-text">
 			<div class="name">
 				<h2>Karrick Martin</h2>
@@ -85,7 +127,6 @@
 		</div>
 	</div>
 	<div class="col-sm-12 player-bio rob-bio" id="rob-bio">
-		<img src="/images/bios/rob-background.jpg">
 		<div class="rob-text">
 			<div class="name">
 				<h2>Rob Krepps</h2>
