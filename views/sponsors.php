@@ -15,36 +15,43 @@
 		</div>
 		<br><br><br><br>
 		<div class="row sponsor-images-container">
-			<div class="col-sm-2">
-			</div>
-			<div class="col-sm-2">
-				<div class="sponsor-image-container">
-					<div class="sponsor-image">
-						<a href="http://bigtoptentrentals.com"><img class="img-responsive" class="sponsor-image-icon" src="images/big-top-logo-gray.png"></a>
-					</div>
+		<div class="col-sm-1">
+		</div>
+		<div class="col-sm-2">
+			<div class="sponsor-image-container">
+				<div class="sponsor-image">
+					<img class="img-responsive" class="sponsor-image-icon" src="images/homestead-logo-gray.png">
 				</div>
 			</div>
-			<div class="col-sm-2">
-				<div class="sponsor-image-container">
-					<div class="sponsor-image">
-						<a href="http://ualberta.ca"><img class="img-responsive" class="sponsor-image-icon"  src="images/u-of-a-logo-gray.png"></a>
-					</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="sponsor-image-container">
+				<div class="sponsor-image">
+					<a href="http://www.bigtoptentrentals.com"><img class="img-responsive" class="sponsor-image-icon" src="images/big-top-logo-gray.png"></a>
 				</div>
 			</div>
-			<div class="col-sm-2">
-				<div class="sponsor-image-container">
-					<div class="sponsor-image">
-						<a href="http://la-z-boy.com"><img class="img-responsive" class="sponsor-image-icon"  src="images/lazy-boy-logo-gray.png"></a>
-					</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="sponsor-image-container">
+				<div class="sponsor-image">
+					<a href="http://www.ualberta.ca"><img class="img-responsive" class="sponsor-image-icon"  src="images/u-of-a-logo-gray.png"></a>
 				</div>
 			</div>
-			<div class="col-sm-2">
-				<div class="sponsor-image-container">
-					<div class="sponsor-image">
-						<a href="http://goldlinecurling.com"><img class="img-responsive" class="sponsor-image-icon"  src="images/goldline-logo-gray.png"></a>
-					</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="sponsor-image-container">
+				<div class="sponsor-image">
+					<a href="http://www.la-z-boy.com"><img class="img-responsive" class="sponsor-image-icon"  src="images/lazy-boy-logo-gray.png"></a>
 				</div>
 			</div>
+		</div>
+		<div class="col-sm-2">
+			<div class="sponsor-image-container">
+				<div class="sponsor-image">
+					<a href="http://www.goldlinecurling.com"><img class="img-responsive" class="sponsor-image-icon"  src="images/goldline-logo-gray.png"></a>
+				</div>
+			</div>
+		</div>
 		</div>
 	</div>
 </div>

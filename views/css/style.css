@@ -7,6 +7,10 @@ html, body {
 	cursor: default;
 }
 
+body .modal-content {
+	width: 90vw;
+}
+
 a:hover {
 	text-decoration: none;
 	color: white;
@@ -85,6 +89,28 @@ body {
 
 .main-image img {
 	width: 100%;
+}
+
+.main-image {
+	position: relative;
+	font-weight: 900;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+.main-image .title {
+	position: absolute;
+	top: 10%;
+	left: 5%;
+	font-size: 5em;
+
+}
+
+.main-image .players {
+	position: absolute;
+	top: 25%;
+	left: 8%;
+	font-size: 2em;
 }
 
 .active-page {
@@ -370,7 +396,10 @@ Team Container
 }
 
 .team-image-container img {
-	border-radius: 3px;
+	border-radius: 50%;
+	border-style: solid;
+	border-width: 5px;
+	border-color:#95a5a6;
 }
 
 .team-image-container img:hover {
@@ -381,14 +410,26 @@ Team Container
 	position: relative;
 }
 
+.team-image-container .image-wrapper a {
+	position: absolute;
+	left: 5%;
+	top: 0;
+	height: 100%;
+	width: 90%;
+	z-index:9999;
+}
+
+
 .team-image-container .caption {
 	position: absolute;
 	left: 5%;
 	top: 0%;
 	width: 90%;
-	height: 0%;
-	transition: height 0.5s;
-	background: #27ae60;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.5s;
+	background: #95a5a6;
+	border-radius: 50%;
 }
 
 .team-image-container .caption-hover {
@@ -407,7 +448,7 @@ Team Container
 	font-size: 4em;
 	font-weight: 500;
 	top: 20%;
-	opacity: 0;
+	opacity: 1;
 }
 
 .team-image-container .caption img {
@@ -958,6 +999,20 @@ Bios
 /***********************************
 Contact Us
 ************************************/
+.contact .send-button {
+	background: #2cc36b;
+	border-color: #2cc36b;
+}
+.contact .send-button:hover {
+	background: #2ecc71;
+	border-color: #2ecc71;
+}
+
+.contact .send-button:focus {
+	background: #2cc36b !important;
+	border-color: #2cc36b !important;
+}
+	
 .contact-header h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
@@ -1053,6 +1108,7 @@ Blog
 .blog-container h3 {
 	font-size: 2em;
 	margin-top: 0.5em !important;
+	margin-bottom: 0.5em !important;
 }
 
 .blog-entry-text-text {

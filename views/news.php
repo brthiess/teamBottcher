@@ -27,15 +27,13 @@ use \Michelf\Markdown;
 			</div>
 			<div class="row">
 				<div class="news-entry-text col-sm-12">
-					<?php echo Markdown::defaultTransform("As the 2015 Scotties Tournament of Hearts takes place in Moose Jaw, Saskatchewan we’d like to thank all of our fans for their support throughout the season.  
-					We encourage you to follow our adventure across all of our social channels while we’re here at the Scotties.  
-					You can post messages to our Facebook page, [...]");?>
+					<?php echo Markdown::defaultTransform("Well it looks like our trip to Germany was a success.  Not only did we get the chance to eat some delicious wiener schnitzel on the Reeperbahn, but  [...]");?>
 				</div>
 			</div>
 		</div>
 		<div class="row">		
 			<div class="news-entry-date col-sm-6">
-					January 24, 2015 <a href='#' class="news-entry-link">Read More</a>
+					January 24, 2015 <a href='blog.php#2' class="news-entry-link">Read More</a>
 			</div>
 		</div>
 	</div>	
@@ -55,15 +53,13 @@ use \Michelf\Markdown;
 			</div>
 			<div class="row">
 				<div class="news-entry-text col-sm-12">
-					<?php echo Markdown::defaultTransform("As the 2015 Scotties Tournament of Hearts takes place in Moose Jaw, Saskatchewan we’d like to thank all of our fans for their support throughout the season.  
-					We encourage you to follow our adventure across all of our social channels while we’re here at the Scotties.  
-					You can post messages to our Facebook page, [...]");?>
+					<?php echo Markdown::defaultTransform("We are off to Germany this week with three of us flying out Sunday and the coach and our second flying out later on Tuesday thanks to coaching and school commitments.  Here is the schedule for those following along. [...]");?>
 				</div>
 			</div>
 		</div>
 		<div class="row">	
 			<div class="news-entry-date col-sm-6">
-				January 14, 2015 <a href='#' class="news-entry-link">Read More</a>
+				January 14, 2015 <a href='blog.php#1' class="news-entry-link">Read More</a>
 			</div>
 		</div>
 	</div>	

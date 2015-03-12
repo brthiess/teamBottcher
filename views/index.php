@@ -6,20 +6,10 @@
 <div class="wrapper">
 
 <div class="col-sm-12 main-image">
-	<div id="slider">
-		<figure>
-			<img src="images/main.jpg" alt="">
-			<img src="images/brendan-bottcher-bio.jpg" alt="">
-			<img src="images/test.jpg" alt="">
-			<img src="images/test2.jpg" alt="">
-			<img src="images/test3.jpg" alt="">
-		</figure>
-		<div class="circle one"></div>
-		<div class="circle two"></div>
-		<div class="circle three"></div>
-		<div class="circle four"></div>
-		<div class="circle five"></div>
-	</div>
+			<img src="images/front-page/brendan-background.jpg" alt="">
+			<div class="title">Team Bottcher</div>
+			<div class="players">Brendan | Tom | Brad | Karrick</div>
+
 </div>
 
 	<?php include 'team.php';?>

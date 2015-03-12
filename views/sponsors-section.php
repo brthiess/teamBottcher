@@ -5,7 +5,14 @@
 		</div>
 	</div>
 	<div class="row sponsor-images-container">
+		<div class="col-sm-1">
+		</div>
 		<div class="col-sm-2">
+			<div class="sponsor-image-container">
+				<div class="sponsor-image">
+					<img class="img-responsive" class="sponsor-image-icon" src="images/homestead-logo-gray.png">
+				</div>
+			</div>
 		</div>
 		<div class="col-sm-2">
 			<div class="sponsor-image-container">

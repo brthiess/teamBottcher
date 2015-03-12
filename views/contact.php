@@ -5,7 +5,7 @@
 <?php
 	$page = "Contact";
 	include 'navbar.php';?>
-<div class="wrapper">
+<div class="contact wrapper">
 	<div class="row top-buffer">
 	</div>
 	<div class="col-sm-6" id="patient-login-form"> 
@@ -25,7 +25,7 @@
 				</div>
 				<input type="hidden" name="type" value="patient"/>
 				<div class="row top-buffer-small">
-					<button type="submit" class="btn btn-block btn-info"><h3>Send<h3></button> 
+					<button type="submit" class="send-button btn btn-block btn-info"><h3>Send<h3></button> 
 				</div>
 			</form>
 		</div>

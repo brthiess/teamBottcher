@@ -11,6 +11,7 @@
 		<div class="player col-sm-3">
 			<div class="row team-image-container">
 				<div class="image-wrapper">
+					<a href="bios.php#karrick-bio"></a>
 					<img src="images/karrick-martin.jpg">
 					<div class="caption-hover">
 					</div>
@@ -58,6 +59,7 @@
 		<div class="player col-sm-3">
 			<div class="row team-image-container">
 				<div class="image-wrapper">
+					<a href="bios.php#brad-bio"></a>
 					<img src="images/brad-thiessen.jpg">
 					<div class="caption-hover">
 					</div>
@@ -105,6 +107,7 @@
 		<div class="player col-sm-3">
 			<div class="row team-image-container">
 				<div class="image-wrapper">
+					<a href="bios.php#tom-bio"></a>
 					<img src="images/tom-appelman.jpg">
 					<div class="caption-hover">
 					</div>
@@ -152,6 +155,7 @@
 		<div class="player col-sm-3">
 			<div class="row team-image-container">
 				<div class="image-wrapper">
+					<a href="bios.php#brendan-bio"></a>
 					<img src="images/brendan-bottcher.jpg">
 					<div class="caption-hover">
 					</div>
