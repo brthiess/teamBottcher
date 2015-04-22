@@ -21,25 +21,45 @@
 			<?php
 				$page = "Gallery";
 				include 'navbar.php';?>
-				<div class="wrapper">
+				<div class="wrapper gallery">
 					<div class="row top-buffer">
 					</div>
 					<div class="row top-buffer">
 					</div>
 
-					  <div class="col-sm-3">
+					  <div class="col-sm-2">
 						<a class="thumbnail" id="1" data-toggle="modal" data-target="#myModal">
 						  <img src="images/gallery/1.jpg">
 						</a>
 					  </div>
-					  <div class="col-sm-3">
+					  <div class="col-sm-2">
 						<a class="thumbnail" id="2" data-toggle="modal" data-target="#myModal">
 						  <img src="images/gallery/2.jpg" >
 						</a>
 					  </div>
-					  <div class="col-sm-3">
+					  <div class="col-sm-2">
 						<a class="thumbnail" data-toggle="modal" data-target="#myModal">
 						  <img src="images/gallery/3.jpg">
+						</a>
+					  </div>
+					  <div class="col-sm-2">
+						<a class="thumbnail" data-toggle="modal" data-target="#myModal">
+						  <img src="images/gallery/4.jpg">
+						</a>
+					  </div>
+					  <div class="col-sm-3">
+						<a class="thumbnail" data-toggle="modal" data-target="#myModal">
+						  <img src="images/gallery/5.jpg">
+						</a>
+					  </div>
+					  <div class="col-sm-3">
+						<a class="thumbnail" data-toggle="modal" data-target="#myModal">
+						  <img src="images/gallery/6.jpg">
+						</a>
+					  </div>
+					   <div class="col-sm-3">
+						<a class="thumbnail" data-toggle="modal" data-target="#myModal">
+						  <img src="images/gallery/7.jpg">
 						</a>
 					  </div>
 				</div>

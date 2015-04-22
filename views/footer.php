@@ -5,8 +5,11 @@
 	</div>
 	<div class="col-sm-3"></div>
 	<div class="col-sm-4 social-icons text-center">
-		<img id="facebook-icon" src="images/facebook-icon.png">
-		<img id="twitter-icon" src="images/twitter-icon.png">
-		<img id="email-icon" src="images/email-icon.png">
+		<a href="https://www.facebook.com/teambottcher"><img id="facebook-icon" src="images/facebook-icon.png"></a>
+		<img class="hidden-image" src="images/facebook-icon-color.png">
+		<a href="https://www.twitter.com/teambottcher"><img id="twitter-icon" src="images/twitter-icon.png"></a>
+		<img class="hidden-image" src="images/twitter-icon-color.png">
+		<a href="mailto:contact@teambottcher.ca"><img id="email-icon" src="images/email-icon.png"></a>
+		<img class="hidden-image" src="images/email-icon-color.png">
 	</div>
 </div>

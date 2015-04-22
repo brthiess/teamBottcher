@@ -18,6 +18,52 @@ $( document ).ready(function() {
 					string = string.replace("colour", "gray");
 					$(this).attr("src", string);
 				});
+				
+	$("#karrick-bio").focus(
+				function() {	
+					$(".bio-slider-container").css("margin-left", "0%");
+					$(".karrick-text").css("opacity", "1");
+					$(".brad-text").css("opacity", "0");
+					$(".rob-text").css("opacity", "0");
+					$(".tom-text").css("opacity", "0");
+					$(".brendan-text").css("opacity", "0");
+				});
+	$("#brad-bio").focus(
+				function() {	
+					$(".bio-slider-container").css("margin-left", "-100%");
+					$(".karrick-text").css("opacity", "0");
+					$(".brad-text").css("opacity", "1");
+					$(".rob-text").css("opacity", "0");
+					$(".tom-text").css("opacity", "0");
+					$(".brendan-text").css("opacity", "0");
+				});
+	$("#rob-bio").focus(
+				function() {	
+					$(".bio-slider-container").css("margin-left", "-200%");
+					$(".karrick-text").css("opacity", "0");
+					$(".brad-text").css("opacity", "0");
+					$(".rob-text").css("opacity", "1");
+					$(".tom-text").css("opacity", "0");
+					$(".brendan-text").css("opacity", "0");
+				});
+	$("#tom-bio").focus(
+				function() {	
+					$(".bio-slider-container").css("margin-left", "-300%");
+					$(".karrick-text").css("opacity", "0");
+					$(".brad-text").css("opacity", "0");
+					$(".rob-text").css("opacity", "0");
+					$(".tom-text").css("opacity", "1");
+					$(".brendan-text").css("opacity", "0");
+				});			
+	$("#brendan-bio").focus(
+				function() {	
+					$(".bio-slider-container").css("margin-left", "-400%");
+					$(".karrick-text").css("opacity", "0");
+					$(".brad-text").css("opacity", "0");
+					$(".rob-text").css("opacity", "0");
+					$(".tom-text").css("opacity", "0");
+					$(".brendan-text").css("opacity", "1");
+				});
 });
 
 //Transition Scrolling

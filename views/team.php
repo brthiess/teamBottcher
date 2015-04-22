@@ -8,10 +8,10 @@
 		</div>		
 	</div>
 	<div class="row top-buffer">
-		<div class="player col-sm-3">
+		<div class="player col-sm-6 col-md-3">
 			<div class="row team-image-container">
 				<div class="image-wrapper">
-					<a href="bios.php#karrick-bio"></a>
+					<a href="bios.php"></a>
 					<img src="images/karrick-martin.jpg">
 					<div class="caption-hover">
 					</div>
@@ -42,24 +42,27 @@
 						<div class="center-block">
 							<a href="https://www.facebook.com/TeamBottcher"><img  class="center-block" src="images/facebook-icon-white.png"></a>
 						</div>
+						<img  class="hidden-image" src="images/facebook-icon-color.png">
 					</div>
 					<div class="player-social-icons col-sm-2">
 						<div class="center-block">
 							<a href="https://twitter.com/KarrickMartin"><img src="images/twitter-icon-white.png" ></a>
 						</div>
+						<img  class="hidden-image" src="images/twitter-icon-color.png">
 					</div>
 					<div class="player-social-icons col-sm-2">
 						<div class="center-block">
 							<a href="mailto:karrickmartin@teambottcher.ca"><img src="images/email-icon-white.png"></a>
 						</div>
+						<img  class="hidden-image" src="images/email-icon-color.png">
 					</div>
 			</div>
 						
 		</div>
-		<div class="player col-sm-3">
+		<div class="player col-sm-6 col-md-3">
 			<div class="row team-image-container">
 				<div class="image-wrapper">
-					<a href="bios.php#brad-bio"></a>
+					<a href="bios.php"></a>
 					<img src="images/brad-thiessen.jpg">
 					<div class="caption-hover">
 					</div>
@@ -104,10 +107,10 @@
 			</div>
 						
 		</div>
-		<div class="player col-sm-3">
+		<div class="player col-sm-6 col-md-3">
 			<div class="row team-image-container">
 				<div class="image-wrapper">
-					<a href="bios.php#tom-bio"></a>
+					<a href="bios.php"></a>
 					<img src="images/tom-appelman.jpg">
 					<div class="caption-hover">
 					</div>
@@ -152,10 +155,10 @@
 			</div>
 			
 		</div>
-		<div class="player col-sm-3">
+		<div class="player col-sm-6 col-md-3">
 			<div class="row team-image-container">
 				<div class="image-wrapper">
-					<a href="bios.php#brendan-bio"></a>
+					<a href="bios.php"></a>
 					<img src="images/brendan-bottcher.jpg">
 					<div class="caption-hover">
 					</div>
