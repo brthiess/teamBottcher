@@ -8,8 +8,10 @@ sec_session_start();
 <!DOCTYPE html>
 <html lang="en">
 <?php include_once "header.php";?>
+<link rel="stylesheet" href="css/admin-styles.css">
 <script src="js/password-checking.js"></script>
 <script src="js/sha512.js"></script>
+
 <body>
 
         <?php if (login_check($mysqli) == true) : ?>
