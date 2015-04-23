@@ -113,6 +113,12 @@ Admin Panel
 	min-height: 100vh;
 }
 
+@media (max-width: 768px){
+	.admin-panel {
+		min-height: 0vh;
+	}
+}
+
 .admin-option {
 	display: inline-block;
 	height: 50px;
@@ -157,6 +163,10 @@ Admin Console
 Post Manager
 ****************/
 
+.add-post-container {
+	padding-top: 3em;
+}
+
 .add-post-container textarea {
 	color: black;
 	width: 100%;
@@ -177,3 +187,111 @@ Post Manager
 #add-post-toolbar img:hover {
 	border-color: #666666;
 }
+
+.blog-post-container {
+	width: 100%;
+	padding-top:2em;
+}
+
+.blog-post-header {
+	background: #2980b9;
+	font-size: 1.2em;
+	padding-left: 1em;
+	padding-top: 0.5em;
+	padding-bottom:0.5em;
+}
+
+.blog-post {
+	background: #bdc3c7;
+	color: #555555;
+}
+
+.blog-post.white {
+	background: #ecf0f1;
+}
+
+.blog-post .date {
+	font-style: italic;
+}
+
+.blog-post .title {
+	font-size: 1.2em;
+}
+
+.blog-post span {
+	margin-top: 15px;
+	font-size: 2em;
+}
+
+/****************
+Twitter
+*****************/
+
+.twitter-container {
+	padding-top:3em;
+}
+
+.admin-twitter-description {
+	color: #666666;
+}
+
+.twitter-container .add-twitter {
+	width: 100%;
+	background: blue;
+}
+
+.add-twitter input {
+	width: 70%;
+	float:left;
+	border-radius: 15px;
+}
+
+
+.add-twitter p {
+	width: 10%;
+	font-size: 1.6em;
+	color: #4099FF;
+}
+
+.add-twitter button {
+	width: 20%;
+	font-weight: 600;
+	border-radius: 15px;
+}
+
+.twitter-user {
+	position: relative;
+	border-radius: 15px;
+	height: 30px;
+	width: 130px;
+	line-height:30px;
+	font-weight: 600;
+	transition: background 0.2s;
+	overflow:hidden;
+}
+
+.twitter-user p {
+	z-index:-99;
+	background: #4099FF;
+}
+
+.twitter-user div {
+	position: absolute;
+	right: 100%;
+	top:0%;
+	transition: right 0.5s;
+	background: #c0392b;
+	width: 100%;
+	border-radius: 15px;
+}
+
+.twitter-user:hover {
+	cursor:pointer;
+}
+
+.twitter-user:hover div {
+	right: 0%;
+	cursor: pointer;
+}
+
+

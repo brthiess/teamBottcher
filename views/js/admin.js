@@ -2,12 +2,17 @@ $(document).ready(function() {
 
 
 	$(".admin-option").click(function(event){
+		$(".admin-console").html("");
 		var target = document.getElementById('admin-console');
 		var spinner = new Spinner(opts).spin(target);
+		$(".admin-option").removeClass("active");
+		$(this).addClass("active");
+		
 		$(".admin-console").load($(this).attr("id") + ".php", function() {
 			spinner.stop();
 		});
 	});
+	
 	
 	
 	

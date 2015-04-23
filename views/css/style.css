@@ -1105,4 +1105,25 @@ Bootstrap 5ths
     }
 }
 
+/*****************
+Button Styles
+*****************/
+
+.green-btn {
+	outline: #2ecc71;
+	background: #2ecc71;
+	border-color: #2ecc71;
+}
+
+.green-btn:hover {
+	outline: #27ae60;
+	background: #27ae60;
+	border-color: #27ae60;
+}
+
+.tall-btn {
+	height: 4em;
+	font-size: 2em;
+}
+
 
