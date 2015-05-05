@@ -1,39 +1,60 @@
 $(document).ready(function() {
 
+	//Upon loading, load default page
+	load_page("admin-add-post");
 
 	$(".admin-option").click(function(event){
-		$(".admin-console").html("");
-		var target = document.getElementById('admin-console');
-		var spinner = new Spinner(opts).spin(target);
-		$(".admin-option").removeClass("active");
-		$(this).addClass("active");
-		
-		$(".admin-console").load($(this).attr("id") + ".php", function() {
-			spinner.stop();
-		});
+		load_page($(this).attr("id"));
 	});
-	
-	
-	
-	
-	
-	//spinner stuff
-	var opts = {
-		  lines: 13, // The number of lines to draw
-		  length: 5, // The length of each line
-		  width: 9, // The line thickness
-		  radius: 30, // The radius of the inner circle
-		  corners: 1, // Corner roundness (0..1)
-		  rotate: 0, // The rotation offset
-		  direction: 1, // 1: clockwise, -1: counterclockwise
-		  color: '#000', // #rgb or #rrggbb or array of colors
-		  speed: 2, // Rounds per second
-		  trail: 60, // Afterglow percentage
-		  shadow: false, // Whether to render a shadow
-		  hwaccel: false, // Whether to use hardware acceleration
-		  className: 'spinner', // The CSS class to assign to the spinner
-		  zIndex: 2e9, // The z-index (defaults to 2000000000)
-		  top: '200px', // Top position relative to parent
-		  left: '50%' // Left position relative to parent
-	};
 });
+
+//Displays a quick confirmation to inform the user of an event
+//location = class of div
+function display_confirmation(location, message, type){
+	//If type is delete, add a question modal to confirm deletion
+	if (type == "delete"){
+		$(".confirmation-modal").remove();
+		$("." + location).append("<div class='confirmation-modal'><div class='center-block text-center modal-message'><p>Delete Post? <button class='delete-post-modal-btn facebook-btn'>Delete</button><button class='cancel-deletion-modal-btn facebook-btn-white facebook-btn'>Cancel</button></p></div></div>");
+		$(".confirmation-modal").css("opacity","1");
+		//When they click delete
+		$("body").on("click", ".delete-post-modal-btn", function(){
+			$(".confirmation-modal").css("opacity","0");
+			//Delete Post
+			$.ajax({type: "post",
+				url: "db/db-delete-post.php",
+				data: {"post_id": post_id},
+				success:function(data){
+					display_confirmation("admin-console", "Post Deleted");
+					$("#post-content").val("");
+					$("#post-title").val("");
+					$("#post-date").val("");
+				}
+			});
+		});
+		$("body").on("click", ".cancel-deletion-modal-btn", function(){
+			$(".confirmation-modal").css("opacity","0");
+		});
+	}
+	else {
+		$(".confirmation-modal").remove();
+		$("." + location).append("<div class='confirmation-modal'><div class='center-block text-center modal-message'><p>" + message + "</p></div></div>");
+		$(".confirmation-modal").css("opacity","1");
+		setTimeout(function() {
+			$(".confirmation-modal").css("opacity","0");
+		}, 2000);
+	}
+}
+
+
+//Loads the given admin page
+function load_page(id){
+	$(".admin-console").html("");
+	var target = document.getElementById('admin-console');
+	var spinner = new Spinner(opts).spin(target);
+	$(".admin-option").removeClass("active");
+	$("#" + id).addClass("active");
+	
+	$(".admin-console").load(id + ".php", function() {
+		spinner.stop();
+	});
+}

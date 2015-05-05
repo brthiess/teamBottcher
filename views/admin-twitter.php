@@ -10,7 +10,7 @@ if (login_check($mysqli) == true) : ?>
 			<h2 class="text-center">Twitter Manager</h2>
 			<p class="admin-twitter-description text-center">Add or remove twitter accounts from your website twitter feed</p>
 			<div class="top-buffer add-twitter">
-				<p class="col-xs-1">@</p><input class="col-xs-7 form-control" name="twitter-name" placeholder="Username"></input><button class="col-xs-4 btn btn-info btn-block">Add User</button>
+				<p class="col-md-1">@</p><input class="col-md-7 form-control" name="twitter-name" placeholder="Username"></input><button class="col-md-4 btn btn-info btn-block">Add User</button>
 			</div>
 			<br><br>
 			<div class="top-buffer twitter-user text-center center-block">

@@ -7,7 +7,9 @@ html, body {
 	cursor: default;
 }
 
-
+.no-padding {
+	padding:0;
+}
 
 a:hover {
 	text-decoration: none;
@@ -1062,6 +1064,7 @@ Blog
 .blog-entry-text-text {
 	color: #666666;
 	font-size: 1.2em;
+	text-align: left;
 }
 
 
@@ -1121,9 +1124,69 @@ Button Styles
 	border-color: #27ae60;
 }
 
+.red-btn {
+	outline: #e74c3c;
+	background: #e74c3c;
+	border-color: #e74c3c;
+}
+
+.red-btn:hover {
+	outline: #c0392b;
+	background: #c0392b;
+	border-color: #c0392b;
+}
+
+.blue-btn:hover {
+	outline: #2c3e50;
+	background: #2c3e50;
+	border-color: #2c3e50;
+}
+
+.blue-btn{
+	outline: #34495e;
+	background: #34495e;
+	border-color: #34495e;
+}
+
 .tall-btn {
 	height: 4em;
 	font-size: 2em;
 }
+
+.facebook-btn {
+	box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	background-color:#637aad;
+	border:1px solid #314179;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+	margin: 3px;
+}
+
+.facebook-btn-white {
+	background-color: #ecf0f1;
+	color: #666666;
+	box-shadow: none;
+	border-color: #bbbbbb;
+}
+
+.facebook-btn:hover {
+	background-color:#5972a7;
+}
+
+.facebook-btn-white:hover {
+	background-color: #dddddd;
+}
+
+.facebook-btn:active {
+	position:relative;
+	top:1px;
+}
+
 
 

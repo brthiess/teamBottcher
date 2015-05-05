@@ -3,6 +3,10 @@
 	margin: 0;
 }
 
+.admin-console {
+	position: relative;
+}
+
 /*******************************
 Form Styles
 *******************************/
@@ -10,6 +14,11 @@ Form Styles
 .general-form {
 	background: gray;
 	border-radius: 5px;
+	padding: 10px;
+}
+
+.white-form {
+	background: white;
 	padding: 10px;
 }
 
@@ -223,6 +232,10 @@ Post Manager
 	font-size: 2em;
 }
 
+.post-preview {
+	color: black !important;
+}
+
 /****************
 Twitter
 *****************/
@@ -237,7 +250,6 @@ Twitter
 
 .twitter-container .add-twitter {
 	width: 100%;
-	background: blue;
 }
 
 .add-twitter input {
@@ -293,5 +305,94 @@ Twitter
 	right: 0%;
 	cursor: pointer;
 }
+
+/******************
+Sponsor Manager
+******************/
+
+.admin-add-image {
+	height: 125px;
+	line-height: 125px;
+	color: #666666;
+	font-weight: 700;
+	font-size: 2em;
+	background:#dddddd;
+}
+
+.admin-add-image:hover {
+	background: #cccccc;
+	cursor: pointer;
+}
+
+.admin-sponsor-container button {
+	font-weight:700;
+}
+
+.admin-sponsor-image-container {
+	margin-top: 3em;
+}
+
+
+
+.admin-sponsor-image {
+	position: relative;
+	overflow: hidden;
+	background: url(../images/admin/transparent-background.png);
+	border-style: solid;
+	border-width: 3px;
+	border-radius: 2px;
+	outline-color: #BBBBBB;
+	outline-style: solid;
+	outline-width: 1px;
+	margin-bottom: 5px;
+}
+
+.admin-upload-image-caption {
+	position:absolute;
+	bottom: -35px;
+	height: 35px;
+	width: 100%;
+	background: rgba(64,64,64,0.8);
+	transition: bottom 0.3s;
+	font-size: 1em;
+	line-height: 35px;
+}
+
+.admin-sponsor-image:hover .admin-upload-image-caption {
+	bottom: 0px;
+	cursor: pointer;
+}
+
+.admin-sponsor-image .admin-upload-image-caption:hover {
+	background: rgba(64,64,64,1);
+}
+
+
+/*************
+Modal
+*************/
+.confirmation-modal {
+	color: white;
+	font-weight: 600;
+	font-size: 1.5em;
+	position: absolute;
+	top: 40%;
+	width: 50%;
+	left: 25%;
+	z-index: 9999;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.modal-message p{
+	position: relative;
+	background: rgba(50,50,50,0.8);
+	border-radius: 5px;
+	display:inline-block;
+	text-align:center;
+	padding: 5px;
+}
+
+
 
 

@@ -13,10 +13,14 @@ if (login_check($mysqli) == true) : ?>
 <div class="col-sm-12 add-post-container">
 	
 	<!--Text Area for Adding Blog Post-->
+	<div class="bottom-buffer col-sm-12">
+	<button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span> <strong>New Post</strong></button>
+	</div>
+	<br><br>
 	<div class="col-sm-8">
 		<h2>Title</h2>
 		<div class="post-title">
-			<input class="form-control" name="post-title" placeholder="Post Title"></input>
+			<input class="form-control" id="post-title" name="post-title" placeholder="Post Title"></input>
 		</div>
 		<br>
 		<div id="add-post-toolbar" style="display: none;">
@@ -50,23 +54,30 @@ if (login_check($mysqli) == true) : ?>
 		
 		</div>
 		<form><textarea id="post-content" placeholder="Enter your text ..." autofocus></textarea></form>
-		<div class="col-sm-4">
-			<button type="submit" class="green-btn btn btn-info btn-block"><span class="glyphicon glyphicon-floppy-saved"></span> <strong>Save Post</strong></button>
-		</div>
 	</div>
 	<div class="col-sm-4">
-		<div class="date-container">
+		<div class="date-container col-sm-12">
 			<h2>Date</h2>
-			<input class="form-control" placeholder="Date" id="date" name="date"></input>
+			<input class="form-control" placeholder="Date" id="post-date" name="date"></input>
+		</div>
+		
+		<div class="top-buffer white-form col-sm-12">
+			<button type="submit" class="bottom-buffer col-sm-12 blue-btn btn btn-info save-post-btn"><span class="glyphicon glyphicon-file"></span> <strong>Save Draft</strong></button>
+			<button type="submit" class="bottom-buffer col-sm-12 btn btn-info preview-post-btn"><span class="glyphicon glyphicon-eye-open"></span> <strong>Preview</strong></button>
+			<button type="submit" class="bottom-buffer col-sm-12 green-btn btn btn-info publish-post-btn"><span class="glyphicon glyphicon-cloud-upload"></span> <strong>Publish</strong></button>
+			<button type="submit" class="col-sm-12 red-btn btn btn-info delete-post-btn"><span class="glyphicon glyphicon-trash"></span> <strong>Delete</strong></button>
 		</div>
 		<br><br>
-		<button type="submit" class="tall-btn btn btn-info btn-block"><span class="glyphicon glyphicon-plus"></span> <strong>New Post</strong></button>
 	</div>
 	
 	<div class="top-buffer col-sm-12 post-preview-container text-center">
 		<h2>Preview</h2>
-		<div class="post-preview">
+		<div class="post-preview blog-container">
+		<!--Post preview is displayed here-->
 		</div>
+	</div>
+	
+	<div class="error-log">
 	</div>
 </div>
 <?php else : ?>
