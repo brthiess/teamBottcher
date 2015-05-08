@@ -1,7 +1,7 @@
 var LOADING = 2;
 
 $(document).ready(function() {
-	$(".form-control").change(function() {
+	$(".form-control").keyup(function() {
 		checkPasswords();		
 	});	
 	
@@ -16,9 +16,21 @@ $(document).ready(function() {
 				success: function(data){
 					if (data == true){
 						setCorrect("#old-password", true);
+						if (allFieldsCorrect()) {
+							$(".change-password-container").html('<button type="submit" class="change-password-btn top-buffer-small btn btn-block btn-info">Change Password</button>');
+						}
+						else {
+							$(".change-password-container").html('<fieldset disabled><button type="submit" class="change-password-btn top-buffer-small btn btn-block btn-info">Change Password</button></fieldset>');
+						}
 					}
 					else {
 						setCorrect("#old-password", false);
+						if (allFieldsCorrect()) {
+							$(".change-password-container").html('<button type="submit" class="change-password-btn top-buffer-small btn btn-block btn-info">Change Password</button>');
+						}
+						else {
+							$(".change-password-container").html('<fieldset disabled><button type="submit" class="change-password-btn top-buffer-small btn btn-block btn-info">Change Password</button></fieldset>');
+						}
 					}
 				}
 			});
@@ -38,7 +50,6 @@ function checkPasswords() {
 	var newPassword = $("#new-password").val();
 	var newPasswordConfirm = $("#new-password-confirm").val();
 	
-	
 	//If the fields match
 	if (newPassword == newPasswordConfirm && newPassword.length > 8) {
 		setCorrect("#new-password", true);
@@ -48,6 +59,10 @@ function checkPasswords() {
 		setCorrect("#new-password", false);
 		setCorrect("#new-password-confirm", false);
 	}
+	
+		console.log( $("#old-password").attr("class"));
+		console.log( $("#new-password").attr("class"));
+		console.log( $("#new-password-confirm").attr("class"));
 	
 	if (allFieldsCorrect()) {
 		$(".change-password-container").html('<button type="submit" class="change-password-btn top-buffer-small btn btn-block btn-info">Change Password</button>');

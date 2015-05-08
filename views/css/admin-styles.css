@@ -7,6 +7,10 @@
 	position: relative;
 }
 
+.admin-black{
+	color: black;
+}
+
 /*******************************
 Form Styles
 *******************************/
@@ -208,7 +212,15 @@ Post Manager
 	padding-left: 1em;
 	padding-top: 0.5em;
 	padding-bottom:0.5em;
+	margin-top: 2em;
+	margin-bottom: 0;
 }
+
+.blog-post-container{
+	margin-top: 0;
+	padding: 0;
+}
+
 
 .blog-post {
 	background: #bdc3c7;
@@ -234,6 +246,24 @@ Post Manager
 
 .post-preview {
 	color: black !important;
+}
+
+.red-text {
+	color: red;
+}
+
+.bold{
+	font-weight: 600;
+	font-size: 1.2em;
+}
+
+.admin-manage-icon{
+	color: #666666;
+}
+
+.admin-manage-icon:hover {
+	cursor:pointer;
+	color: black;
 }
 
 /****************
@@ -317,6 +347,7 @@ Sponsor Manager
 	font-weight: 700;
 	font-size: 2em;
 	background:#dddddd;
+	padding: 0;
 }
 
 .admin-add-image:hover {
@@ -332,6 +363,19 @@ Sponsor Manager
 	margin-top: 3em;
 }
 
+
+.admin-sponsor-upload-image {
+	color: white;
+	font-weight: 100;
+	font-size: 14px;
+	margin:0;
+	padding: 0;
+}
+
+.admin-sponsor-upload-image img {
+	max-height: 200px;
+	width: auto !important;
+}
 
 
 .admin-sponsor-image {
@@ -381,7 +425,7 @@ Modal
 	left: 25%;
 	z-index: 9999;
 	opacity: 0;
-	transition: opacity 0.5s;
+	transition: opacity 1s;
 }
 
 .modal-message p{

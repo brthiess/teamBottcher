@@ -10,6 +10,10 @@ sec_session_start();
 <?php include_once "header.php";?>
 <link rel="stylesheet" href="css/admin-styles.css">
 <script src="js/admin.js"></script>
+<script src="js/add-post.js"></script>
+<script src="js/admin-manage-posts.js"></script>
+<script src="js/admin-twitter.js"></script>
+<script src="js/admin-sponsor.js"></script>
 <script src="js/spin.min.js"></script>
 <body>
 

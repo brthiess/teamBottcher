@@ -31,6 +31,14 @@ sec_session_start();
 					</form>
 				</div>
 			</div>
+				<div class="top-buffer col-sm-4 col-sm-offset-4">
+					<h2>Password Rules:</h2>
+					<ul>
+					<li class="admin-black">Must be greater than 8 characters</li>
+					</ul>
+					
+				</div>
+				
         <?php else : ?>
             <p>
                 <span class="error">You are not authorized to access this page.</span> Please <a href="admin-login.php">login</a>.

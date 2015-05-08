@@ -3,30 +3,29 @@ var draft_id = -1;
 var post_id = -1;
 
 $(document).ready(function() {
-	
-	//Initializing date field
-	$( "#post-date" ).datepicker({dateFormat: 'yy-mm-dd'});
-	
-	//For initializing text editor
-	var editor = new wysihtml5.Editor("post-content", { // id of textarea element
-	  toolbar:      "add-post-toolbar", // id of toolbar element
-	  parserRules:  wysihtml5ParserRules, // defined in parser rules set 
-	  stylesheets: ["http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css", "css/admin-text-editor.css"]
-	});
-	
 	//Activated when user clicks to save their blog post
-	$(".save-post-btn").click(function(){
+	$("body").on("click", ".save-post-btn", function(){
 		modify_post("save_draft");
 		});
-	$(".preview-post-btn").click(function(){
+	$("body").on("click", ".preview-post-btn", function(){
 		preview_post();
 		});
-	$(".publish-post-btn").click(function(){
+	$("body").on("click", ".publish-post-btn", function(){
 		modify_post("publish");
 		});
-	$(".delete-post-btn").click(function(){
+	$("body").on("click", ".delete-post-btn", function(){
 		modify_post("delete");
 		});
+	$("body").on("click", ".add-post-btn", function(){
+		new_post();
+	});
+		
+	$("body").on("click", "#admin-add-post", function() {
+		publish_id = -1;
+		draft_id = -1;
+		post_id = -1;
+	});
+	
 	
 });
 
@@ -133,7 +132,7 @@ function preview_post(){
 }
 
 function delete_post(success_message, id){
-	display_confirmation("admin-console", success_message, "delete");
+	display_confirmation("admin-console", success_message, "delete", post_id);
 }
 
 function month_to_string(month_number){
@@ -173,3 +172,13 @@ function month_to_string(month_number){
 		return "DEC"
 	}
 }
+
+function new_post(){
+	publish_id = -1;
+	draft_id = -1;
+	post_id = -1;
+	$("#post-title").val("");
+	$("#post-date").val("");
+}
+
+

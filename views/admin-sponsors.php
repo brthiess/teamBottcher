@@ -9,11 +9,13 @@ if (login_check($mysqli) == true) : ?>
 			<div class="col-sm-12 admin-add-sponsor-container">
 				<h2 class="text-center">Sponsor Manager</h2>
 				<p class="admin-twitter-description text-center">Add or remove sponsor images and links from your website</p>
-				<div class="admin-add-image text-center">
+				<div class="admin-add-image text-center" onclick="document.getElementById('image-upload').click(); return false;">
 					<p><span class="glyphicon glyphicon-plus"></span> Upload Sponsor Photo</p>
 				</div>
-				<input class="top-buffer-small form-control" name="sponsor-link" placeholder="Sponsor Website"></input>
-				<button type="submit" class="center-block top-buffer-small btn btn-info">Add Sponsor</button>
+				<input class="btn btn-info hidden" type="file" name="image-upload" id="image-upload" onchange="add_image()" ></input>
+					
+				<input class="top-buffer-small form-control" name="sponsor-link" id="sponsor-link" placeholder="Sponsor Website"></input>
+				<button type="submit" class="center-block top-buffer-small btn btn-info admin-add-sponsor-btn">Add Sponsor</button>
 			</div>
 		</div>	
 		<div class="col-sm-12 admin-sponsor-image-container">

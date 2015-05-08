@@ -42,16 +42,49 @@ function get_post($mysqli, $id){
 	return $stmt->mysqli_fetch_all();
 }
 
+function get_all_posts($mysqli){
+	$stmt = $mysqli->prepare("SELECT * FROM post");
+	$stmt->execute();
+	
+	$results = array();
+	$result = $stmt->get_result();
+	while ($row = $result->fetch_array(MYSQLI_NUM))
+        {
+			array_push($results, $row);
+        }
+	return $results;
+}
+
 function add_twitter_account($mysqli, $username){
-	$stmt = $mysqli->prepare("INSERT INTO twitter_accounts (username) VALUES(:username)" );
-	$stmt->bindParam(":username", $username);
+	$stmt = $mysqli->prepare("INSERT INTO twitter_accounts (username) VALUES(?)" );
+	$stmt->bind_param("s", $username);
 	$stmt->execute();
 }
 
-function remove_twitter_account($mysqli, $id){
-	$stmt = $mysqli->prepare("DELETE FROM twitter_accounts WHERE id = :id");
-	$stmt->bindParam(':id', $id);
+function remove_twitter_account($mysqli, $username){
+	$stmt = $mysqli->prepare("DELETE FROM twitter_accounts WHERE username = ?");
+	$stmt->bind_param('s', $username);
 	$stmt->execute();
+}
+
+function get_twitter_accounts($mysqli){
+	$stmt = $mysqli->prepare("SELECT * FROM twitter_accounts");
+	$stmt->execute();
+	
+	$results = array();
+	$result = $stmt->get_result();
+	while ($row = $result->fetch_array(MYSQLI_NUM))
+        {
+			array_push($results, $row);
+        }
+	return $results;
+}
+
+function add_sponsor($mysqli, $sponsor_image, $sponsor_link){
+		$stmt = $mysqli->prepare("INSERT INTO sponsors (image, link) VALUES (?, ?)");
+		$stmt->bind_param('ss', $sponsor_image, $sponsor_link);
+		$stmt->execute();
+		return $mysqli->insert_id;
 }
 
 function add_image($mysqli, $image){

@@ -1,6 +1,8 @@
 DROP TABLE IF EXISTS users;
 DROP TABLE IF EXISTS login_attempts;
 DROP TABLE IF EXISTS post;
+DROP TABLE IF EXISTS twitter_accounts;
+DROP TABLE IF EXISTS sponsors;
 
 CREATE TABLE users(
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -28,5 +30,21 @@ CREATE TABLE post (
 	draft BOOLEAN
 );
 
+
 INSERT INTO post (title, content, post_date, draft) VALUES ("Test Title", "Test Content", "2015-11-05", FALSE);
 
+
+CREATE TABLE twitter_accounts (
+	username varchar(30) NOT NULL PRIMARY KEY
+);
+
+INSERT INTO twitter_accounts(username) VALUES("bradcurler");
+INSERT INTO twitter_accounts(username) VALUES("swiftchaser");
+
+
+
+CREATE TABLE sponsors (
+	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	image BLOB,
+	link varchar(256)
+);

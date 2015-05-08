@@ -3,13 +3,7 @@
 	<!--Text Area for Adding Blog Post-->
 	<div class="bottom-buffer col-sm-12">
 	
-	<?php if (isset($_GET["update"])){
-		echo '<button type="submit" class="admin-back-btn btn btn-info"><span class="glyphicon glyphicon-chevron-left"></span> <strong>Back</strong></button>';
-	}
-	else {
-	echo '<button type="submit" class="btn btn-info add-post-btn"><span class="glyphicon glyphicon-plus"></span> <strong>New Post</strong></button>';
-	}
-	?>
+	<button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span> <strong>New Post</strong></button>';
 	</div>
 	<br><br>
 	<div class="col-sm-8">
@@ -75,17 +69,3 @@
 	<div class="error-log">
 	</div>
 </div>
-<script src="js/advanced.js"></script>
-<script src="js/wysihtml5-0.3.0.min.js"></script>
-<script  type="text/javascript">	
-	//For initializing text editor
-	var editor = new wysihtml5.Editor("post-content", { // id of textarea element
-	  toolbar:      "add-post-toolbar", // id of toolbar element
-	  parserRules:  wysihtml5ParserRules, // defined in parser rules set 
-	  stylesheets: ["http://yui.yahooapis.com/2.9.0/build/reset/reset-min.css", "css/admin-text-editor.css"]
-	});
-	
-		//Initializing date field
-	$( "#post-date" ).datepicker({dateFormat: 'yy-mm-dd'});
-</script>
-
