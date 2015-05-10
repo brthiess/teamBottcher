@@ -3,8 +3,8 @@ include_once 'db_connect.php';
 include_once 'functions.php';
 include_once 'db.php';
 
-	$post_id = $_POST["post_id"];
+	$image_id = $_POST["image_id"];
 		
-	remove_post($mysqli, $post_id);
-	echo $post_id;
+	delete_image($mysqli, $image_id);
+	echo $image_id;
 ?>
